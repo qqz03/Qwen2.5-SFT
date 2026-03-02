@@ -1,0 +1,43 @@
+{
+  "model_name": "sft_model",
+  "model_path": "/home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509/checkpoint-9376",
+  "timestamp": "20260302_135056",
+  "gpu_id": 2,
+  "total_tasks": 8,
+  "completed_tasks": 8,
+  "results": {
+    "mmlu": {
+      "status": "completed",
+      "fewshot": 5
+    },
+    "arc_easy": {
+      "status": "completed",
+      "fewshot": 0
+    },
+    "arc_challenge": {
+      "status": "completed",
+      "fewshot": 25
+    },
+    "hellaswag": {
+      "status": "completed",
+      "fewshot": 10
+    },
+    "winogrande": {
+      "status": "completed",
+      "fewshot": 5
+    },
+    "truthfulqa_mc2": {
+      "status": "completed",
+      "fewshot": 0
+    },
+    "piqa": {
+      "status": "completed",
+      "fewshot": 0
+    },
+    "boolq": {
+      "status": "completed",
+      "fewshot": 0
+    }
+  },
+  "note": "All evaluations use TEST split (lm_eval default for benchmark tasks)"
+}

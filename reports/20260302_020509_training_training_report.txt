@@ -1,0 +1,54 @@
+================================================================================
+SFT TRAINING FINAL REPORT
+================================================================================
+
+Timestamp: 2026-03-02 07:30:02
+Model: Qwen2.5-0.5B
+Model Path: /home/qianqz/Model/Qwen2.5-0.5B
+Dataset: OpenOrca (300k samples)
+Dataset Path: /home/qianqz/Dataset/OpenOrca/orca_filtered_300k.jsonl
+Dataset Dir: /home/qianqz/LlamaFactory/data
+Target GPU: 7
+
+--------------------------------------------------------------------------------
+HYPERPARAMETERS (VALIDATED)
+--------------------------------------------------------------------------------
+learning_rate             2.0e-5
+epochs                    2
+effective_batch_size      64 (16 × 4)
+warmup_steps              469 (5%)
+sequence_length           1024
+weight_decay              0.01
+optimizer                 AdamW
+lr_scheduler              Cosine
+precision                 FP16
+Total Steps               9,376
+Steps per Epoch           4,688
+
+--------------------------------------------------------------------------------
+TRAINING RESULTS
+--------------------------------------------------------------------------------
+Duration: 5.41 hours
+Best Loss: None
+
+Output Directory: /home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509
+Log File: /home/qianqz/Qwen-SFT/logs/20260302_020509_training.log
+Figures Directory: /home/qianqz/Qwen-SFT/figures/figures_20260302_020509
+Report File: /home/qianqz/Qwen-SFT/reports/20260302_020509_training_training_report.txt
+
+--------------------------------------------------------------------------------
+OUTPUT FILES
+--------------------------------------------------------------------------------
+Model Weights: /home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509/model.safetensors
+Model Config: /home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509/config.json
+Tokenizer: /home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509/tokenizer.json
+Training State: /home/qianqz/Qwen-SFT/outputs/qwen2.5-0.5b-sft-full_20260302_020509/trainer_state.json
+Loss Curve: /home/qianqz/Qwen-SFT/figures/figures_20260302_020509/20260302_020509_training_loss_curve.png
+LR Curve: /home/qianqz/Qwen-SFT/figures/figures_20260302_020509/20260302_020509_training_lr_curve.png
+Speed Curve: /home/qianqz/Qwen-SFT/figures/figures_20260302_020509/20260302_020509_training_speed_curve.png
+Training Log: /home/qianqz/Qwen-SFT/logs/20260302_020509_training.log
+Final Report: /home/qianqz/Qwen-SFT/reports/20260302_020509_training_training_report.txt
+
+================================================================================
+TRAINING COMPLETED SUCCESSFULLY
+================================================================================
